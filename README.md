@@ -5,6 +5,12 @@
 <p><i>Realtime monitoring, for your entire business. A <a href="https://logsnag.com/?utm_source=github/joppedc-logsnag-php-sdk&utm_medium=logo" target="_blank">LogSnag</a> PHP SDK. </i></p>
 </div>
 
+<p align="center">
+  <a href="https://packagist.org/packages/joppedc/logsnag-php-sdk"><img src="https://img.shields.io/packagist/v/joppedc/logsnag-php-sdk" alt="Latest Stable Version"></a>
+  <a href="https://github.com/JoppeDC/LogSnag-PHP-SDK/actions"><img src="https://github.com/JoppeDC/LogSnag-PHP-SDK/workflows/CI/badge.svg" alt="Test"></a>
+  <a href="https://github.com/JoppeDC/LogSnag-PHP-SDK/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-informational" alt="License"></a>
+</p>
+
 # Unofficial PHP SDK
 
 ## Getting started
