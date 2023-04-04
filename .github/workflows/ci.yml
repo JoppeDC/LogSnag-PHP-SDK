@@ -1,0 +1,49 @@
+name: CI
+on: [push]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-versions: ['7.4', '8.0', '8.1', '8.2']
+    name: integration-tests (PHP ${{ matrix.php-versions }})
+    env:
+      LOGSNAG_URL: ${{ secrets.LOGSNAG_URL }}
+      LOGSNAG_API_KEY: ${{ secrets.LOGSNAG_API_KEY }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          coverage: none
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+      - name: Install dependencies
+        run: |
+          composer remove --dev friendsofphp/php-cs-fixer --no-update --no-interaction
+          composer update --prefer-dist --no-progress
+      - name: Run test suite - default HTTP client (Guzzle 7)
+        run: |
+          sh scripts/tests.sh
+          composer remove --dev guzzlehttp/guzzle http-interop/http-factory-guzzle
+      - name: Run test suite - php-http/guzzle6-adapter
+        run: |
+          composer require --dev php-http/guzzle6-adapter http-interop/http-factory-guzzle
+          sh scripts/tests.sh
+          composer remove --dev php-http/guzzle6-adapter http-interop/http-factory-guzzle
+      - name: Run test suite - symfony/http-client
+        run: |
+          composer require --dev symfony/http-client nyholm/psr7
+          sh scripts/tests.sh
+          composer remove --dev symfony/http-client nyholm/psr7
+      - name: Run test suite - php-http/curl-client
+        run: |
+          composer require --dev php-http/curl-client nyholm/psr7
+          sh scripts/tests.sh
+          composer remove --dev php-http/curl-client nyholm/psr7
+      - name: Run test suite - kriswallsmith/buzz
+        run: |
+          composer require --dev kriswallsmith/buzz nyholm/psr7 --with-all-dependencies
+          sh scripts/tests.sh
+          composer remove --dev kriswallsmith/buzz nyholm/psr7

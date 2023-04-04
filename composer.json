@@ -14,7 +14,7 @@
     "guzzlehttp/guzzle": "^7.5",
     "http-interop/http-factory-guzzle": "^1.2",
     "phpstan/phpstan": "^1.10",
-    "phpunit/phpunit": "^10.0"
+    "phpunit/phpunit": "^9.5"
   },
   "license": "MIT",
   "autoload": {
