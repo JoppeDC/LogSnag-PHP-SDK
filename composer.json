@@ -29,6 +29,10 @@
       "email": "hello@joppe.dev"
     }
   ],
+  "suggest": {
+    "guzzlehttp/guzzle": "Use Guzzle ^7 as HTTP client",
+    "http-interop/http-factory-guzzle": "Factory for guzzlehttp/guzzle"
+  },
   "config": {
     "allow-plugins": {
       "php-http/discovery": true
