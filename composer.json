@@ -1,6 +1,6 @@
 {
   "name": "joppedc/logsnag-php-sdk",
-  "description": "PHP SDK For LogSnag",
+  "description": "An integration of the Logsnag API for PHP",
   "type": "library",
   "require": {
     "php": "^7.4 || ^8.0",
