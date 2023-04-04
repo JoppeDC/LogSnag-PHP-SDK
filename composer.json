@@ -1,0 +1,51 @@
+{
+  "name": "joppedc/logsnag-php-sdk",
+  "description": "PHP SDK For LogSnag",
+  "type": "library",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "php-http/discovery": "^1.15",
+    "php-http/httplug": "^2.3",
+    "php-http/client-common": "^2.6",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.16",
+    "guzzlehttp/guzzle": "^7.5",
+    "http-interop/http-factory-guzzle": "^1.2",
+    "phpstan/phpstan": "^1.10",
+    "phpunit/phpunit": "^10.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "JoppeDc\\LogsnagPhpSdk\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joppe de Cuyper",
+      "email": "hello@joppe.dev"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  },
+  "scripts": {
+    "codestyle": [
+      "./vendor/bin/php-cs-fixer fix --verbose --config=.php-cs-fixer.dist.php --using-cache=no --dry-run --diff"
+    ],
+    "codestyle:fix": [
+      "./vendor/bin/php-cs-fixer fix --verbose --config=.php-cs-fixer.dist.php --using-cache=no  --diff"
+    ],
+    "phpstan": [
+      "php -d memory_limit=256M ./vendor/bin/phpstan"
+    ],
+    "test": [
+      "sh scripts/tests.sh"
+    ]
+  }
+}
