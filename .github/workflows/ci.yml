@@ -8,7 +8,9 @@ jobs:
       - uses: php-actions/composer@v6
       - name: PHPUnit Tests
         uses: php-actions/phpunit@master
+        env:
+          APP_ENV: test
         with:
           bootstrap: vendor/autoload.php
-          configuration: tests/phpunit.xml
+          configuration: phpunit.xml
           args: --coverage-text

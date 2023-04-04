@@ -2,5 +2,4 @@
 .idea/
 .php-cs-fixer.cache
 composer.lock
-phpunit.xml
 scripts/.env
