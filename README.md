@@ -18,10 +18,10 @@
 ### Install
 
 To install the SDK you will need to be using [Composer]([https://getcomposer.org/)
-in your project. To install it please see the [docs](https://getcomposer.org/download/).
+in your project. To install it please see the [composer docs](https://getcomposer.org/download/).
 
 This is the "core" SDK, meaning that all the core logic and models are here.
-If you are happy with using the HTTP client we recommend install the SDK
+If you are happy with using your own HTTP client, install the SDK
 like: [`joppedc/logsnag-php-sdk`](https://github.com/JoppeDC/LogSnag-PHP-SDK)
 
 ```bash
@@ -41,10 +41,7 @@ composer require joppedc/logsnag-php-sdk php-http/curl-client
 This will install the library itself along with an HTTP client adapter that uses
 cURL as transport method (provided by Httplug). You do not have to use those
 packages if you do not want to. The SDK does not care about which transport method
-you want to use because it's an implementation detail of your application. You may
-use any package that
-provides [`php-http/async-client-implementation`](https://packagist.org/providers/php-http/async-client-implementation)
-and [`http-message-implementation`](https://packagist.org/providers/psr/http-message-implementation).
+you want to use because it's an implementation detail of your application.
 
 ### Configuration
 
@@ -82,7 +79,7 @@ $payload = new JoppeDc\LogsnagPhpSdk\Contracts\InsightPayload(
 
 $payload->setIcon('😀');
 
-$insight = $this->client->createLog($payload);
+$insight = $this->client->createInsight($payload);
 ```
 
 #### Mutate an insight event
@@ -96,7 +93,7 @@ $payload = new JoppeDc\LogsnagPhpSdk\Contracts\MutateInsightPayload(
 
 $payload->setIcon('😀');
 
-$insight = $this->client->createLog($payload);
+$insight = $this->client->mutateInsight($payload);
 ```
 
 ## Special thanks
