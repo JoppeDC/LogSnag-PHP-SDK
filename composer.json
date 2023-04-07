@@ -4,15 +4,14 @@
   "type": "library",
   "require": {
     "php": "^7.4 || ^8.0",
+    "ext-json": "*",
     "php-http/discovery": "^1.15",
-    "php-http/httplug": "^2.3",
-    "php-http/client-common": "^2.6",
-    "ext-json": "*"
+    "psr/http-client-implementation": "*",
+    "psr/http-factory-implementation": "*"
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^3.16",
     "guzzlehttp/guzzle": "^7.5",
-    "http-interop/http-factory-guzzle": "^1.2",
     "phpstan/phpstan": "^1.10",
     "phpunit/phpunit": "^9.5"
   },
@@ -29,13 +28,9 @@
       "email": "hello@joppe.dev"
     }
   ],
-  "suggest": {
-    "guzzlehttp/guzzle": "Use Guzzle ^7 as HTTP client",
-    "http-interop/http-factory-guzzle": "Factory for guzzlehttp/guzzle"
-  },
   "config": {
     "allow-plugins": {
-      "php-http/discovery": true
+      "php-http/discovery": false
     }
   },
   "scripts": {

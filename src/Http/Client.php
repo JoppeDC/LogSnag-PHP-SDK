@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace JoppeDc\LogsnagPhpSdk\Http;
 
-use Http\Discovery\Psr17FactoryDiscovery;
+use Http\Discovery\Psr17Factory;
 use Http\Discovery\Psr18ClientDiscovery;
 use JoppeDc\LogsnagPhpSdk\Contracts\Http;
 use JoppeDc\LogsnagPhpSdk\Exceptions\ApiException;
@@ -43,8 +43,8 @@ class Client implements Http
         $this->baseUrl = $url;
         $this->apiKey = $apiKey;
         $this->http = $httpClient ?? Psr18ClientDiscovery::find();
-        $this->requestFactory = $reqFactory ?? Psr17FactoryDiscovery::findRequestFactory();
-        $this->streamFactory = $streamFactory ?? Psr17FactoryDiscovery::findStreamFactory();
+        $this->requestFactory = $reqFactory ?? new Psr17Factory();
+        $this->streamFactory = $streamFactory ?? ($this->requestFactory instanceof StreamFactoryInterface ? $this->requestFactory : new Psr17Factory());
 
         $this->headers = array_filter([
             'User-Agent' => implode(';', array_merge($clientAgents, [Logsnag::qualifiedVersion()])),
