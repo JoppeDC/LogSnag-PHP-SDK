@@ -46,7 +46,7 @@ you want to use because it's an implementation detail of your application.
 ### Configuration
 
 ```php
-new JoppeDc\LogsnagPhpSdk\Client("https://api.logsnag.com/v1/", "your_secret_key");
+new JoppeDc\LogsnagPhpSdk\Client("your_secret_key");
 ```
 
 ### Usage

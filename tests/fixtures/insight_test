@@ -1,0 +1,205 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.logsnag.com/v1/insight'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Accept: ''
+        body: '{"project":"test","title":"test","value":5}'
+    response:
+        status:
+            code: 200
+            message: OK
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:25:08 GMT'
+            Content-Type: application/json
+            Content-Length: '43'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gSNCoZgLrs4AyXxCHxQkafZZLBhacBMynw3QuzvkmIj3aKX2vt5Hcb0eAnhH2zKk1lrYD7lUJFuXgsxiZktjxHBAeakuE0ilUV%2BqIaDB2H8H3nnERNNcHL6iA%2BAu%2B3aN4i%2BizDVreNArlqp7lKY%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b520b590b4a2e14-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"project":"test","title":"test","value":5}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/insight'
+            content_type: application/json
+            http_code: 200
+            header_size: 611
+            request_size: 237
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.409865
+            namelookup_time: 0.004586
+            connect_time: 0.208763
+            pretransfer_time: 0.25038
+            size_upload: 43.0
+            size_download: 43.0
+            speed_download: 104.0
+            speed_upload: 104.0
+            download_content_length: 43.0
+            upload_content_length: 43.0
+            starttransfer_time: 0.409838
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61734
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 459094
+            connect_time_us: 208763
+            namelookup_time_us: 4586
+            pretransfer_time_us: 250380
+            redirect_time_us: 0
+            starttransfer_time_us: 409838
+            total_time_us: 409865
+            effective_method: POST
+    index: 0
+-
+    request:
+        method: POST
+        url: 'https://api.logsnag.com/v1/insight'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Accept: ''
+        body: '{"project":"test","title":"mutated-insight","value":4}'
+    response:
+        status:
+            code: 200
+            message: OK
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:25:08 GMT'
+            Content-Type: application/json
+            Content-Length: '54'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NMwdkyCHMc0iseORBtu7VO0Suer88ded0BkTypjwoiKD0RxIXTVKMDX1LlnE%2F%2FNEJJemMVGfUH9XVcN32OZczl97wCrJBj24072iC8n5ojwI5hYOQtZ78buPXccTnh8Q6FFqTrroEqXGt5n2D7k%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b520b5b9ac0b9b3-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"project":"test","title":"mutated-insight","value":4}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/insight'
+            content_type: application/json
+            http_code: 200
+            header_size: 607
+            request_size: 248
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.412237
+            namelookup_time: 0.001244
+            connect_time: 0.205525
+            pretransfer_time: 0.243565
+            size_upload: 54.0
+            size_download: 54.0
+            speed_download: 130.0
+            speed_upload: 130.0
+            download_content_length: 54.0
+            upload_content_length: 54.0
+            starttransfer_time: 0.412095
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61735
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 449039
+            connect_time_us: 205525
+            namelookup_time_us: 1244
+            pretransfer_time_us: 243565
+            redirect_time_us: 0
+            starttransfer_time_us: 412095
+            total_time_us: 412237
+            effective_method: POST
+    index: 0
+-
+    request:
+        method: PATCH
+        url: 'https://api.logsnag.com/v1/insight'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Accept: ''
+        body: '{"project":"test","title":"mutated-insight","value":{"$inc":2}}'
+    response:
+        status:
+            code: 200
+            message: OK
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:25:08 GMT'
+            Content-Type: application/json
+            Content-Length: '63'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YqG9UJznrZYEHwgH%2BdIFF9Hl0nGRtKzoEYqdxBDB45p84%2F7iveFLbGJzQADjg1F6pRG2e7aMD59bteV3kjWHFRUMGxSgVm3dy5l1aXaBt8aXNY2T5zvt7BeYtqyCDaoymr6Yuyoj3%2FvljC2E3ZU%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b520b5e39b3f961-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"project":"test","title":"mutated-insight","value":{"$inc":2}}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/insight'
+            content_type: application/json
+            http_code: 200
+            header_size: 609
+            request_size: 258
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.388318
+            namelookup_time: 0.001676
+            connect_time: 0.205939
+            pretransfer_time: 0.247314
+            size_upload: 63.0
+            size_download: 63.0
+            speed_download: 162.0
+            speed_upload: 162.0
+            download_content_length: 63.0
+            upload_content_length: 63.0
+            starttransfer_time: 0.3882
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61736
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 452925
+            connect_time_us: 205939
+            namelookup_time_us: 1676
+            pretransfer_time_us: 247314
+            redirect_time_us: 0
+            starttransfer_time_us: 388200
+            total_time_us: 388318
+            effective_method: PATCH
+    index: 0

@@ -9,6 +9,9 @@ use Tests\TestCase;
 
 final class LogTest extends TestCase
 {
+    /**
+     * @vcr log_test
+     */
     public function testCreateLog(): void
     {
         $payload = new LogPayload(
@@ -29,6 +32,9 @@ final class LogTest extends TestCase
         $this->assertEquals('😀', $response['icon']);
     }
 
+    /**
+     * @vcr log_test
+     */
     public function testCreateLogWithTags(): void
     {
         $payload = new LogPayload(
@@ -44,6 +50,9 @@ final class LogTest extends TestCase
         $this->assertEquals(['tag' => 'tag value'], $response['tags']);
     }
 
+    /**
+     * @vcr log_test
+     */
     public function testCreateImportedLog(): void
     {
         $payload = new LogPayload(
@@ -52,7 +61,7 @@ final class LogTest extends TestCase
             'test-imported-event'
         );
 
-        $payload->setTimestamp((new \DateTime('-6 months'))->getTimestamp());
+        $payload->setTimestamp((new \DateTime('1-1-2023'))->getTimestamp());
 
         $response = $this->client->createLog($payload);
 

@@ -1,0 +1,205 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.logsnag.com/v1/log'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Accept: ''
+        body: '{"project":"test","channel":"test","event":"test-event","description":"test-description","icon":"\ud83d\ude00","notify":true,"parser":"text"}'
+    response:
+        status:
+            code: 200
+            message: OK
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:25:09 GMT'
+            Content-Type: application/json
+            Content-Length: '133'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=M2K9JnP7XjfLtXh0rWTdNEB09dr3RvEUg%2FCdklQUitfNzZrkBIe8NRQaVwwXr6dHvnLVQ0063vh3ES05kLNafhd4vAxWvmy05sldYI142C7%2BJa6qCc%2BmGi%2BA0a%2FWoCqFMCTgaGTpUdZAPclBIQg%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b520b60ca9883c4-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"project":"test","channel":"test","event":"test-event","description":"test-description","icon":"😀","notify":true,"parser":"text"}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/log'
+            content_type: application/json
+            http_code: 200
+            header_size: 614
+            request_size: 332
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.40465
+            namelookup_time: 0.001255
+            connect_time: 0.205526
+            pretransfer_time: 0.248239
+            size_upload: 141.0
+            size_download: 133.0
+            speed_download: 328.0
+            speed_upload: 348.0
+            download_content_length: 133.0
+            upload_content_length: 141.0
+            starttransfer_time: 0.404591
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61737
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 453703
+            connect_time_us: 205526
+            namelookup_time_us: 1255
+            pretransfer_time_us: 248239
+            redirect_time_us: 0
+            starttransfer_time_us: 404591
+            total_time_us: 404650
+            effective_method: POST
+    index: 0
+-
+    request:
+        method: POST
+        url: 'https://api.logsnag.com/v1/log'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Accept: ''
+        body: '{"project":"test","channel":"test","event":"test-event","notify":true,"tags":{"tag":"tag value"},"parser":"text"}'
+    response:
+        status:
+            code: 200
+            message: OK
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:25:09 GMT'
+            Content-Type: application/json
+            Content-Length: '113'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nNYzItLaGpp49TDT%2Fp3F03NwZDpZabe1TKlruDBoiBGS8N5nM5gir1YcRi1KbbazAiD06%2Bps5aAMMtvWSV1gtYO6JSd2SGRAfmznTBkVFcwJwlGFTJhVg6utyaEEHziX5%2BVhIhvSJLfEKJNs6no%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b520b634aa6d498-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"project":"test","channel":"test","event":"test-event","tags":{"tag":"tag value"},"notify":true,"parser":"text"}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/log'
+            content_type: application/json
+            http_code: 200
+            header_size: 610
+            request_size: 304
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.405699
+            namelookup_time: 0.001699
+            connect_time: 0.206061
+            pretransfer_time: 0.246262
+            size_upload: 113.0
+            size_download: 113.0
+            speed_download: 278.0
+            speed_upload: 278.0
+            download_content_length: 113.0
+            upload_content_length: 113.0
+            starttransfer_time: 0.405572
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61738
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 452276
+            connect_time_us: 206061
+            namelookup_time_us: 1699
+            pretransfer_time_us: 246262
+            redirect_time_us: 0
+            starttransfer_time_us: 405572
+            total_time_us: 405699
+            effective_method: POST
+    index: 0
+-
+    request:
+        method: POST
+        url: 'https://api.logsnag.com/v1/log'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Accept: ''
+        body: '{"project":"test","channel":"test","event":"test-imported-event","notify":true,"parser":"text","timestamp":1672531200}'
+    response:
+        status:
+            code: 200
+            message: OK
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:25:10 GMT'
+            Content-Type: application/json
+            Content-Length: '135'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1RtvQUgYUifINAGVBDZ2EA55mabMQAwMW5WepzD6mQOnbRCU3lj2RqgsI6EimpOlvw37CcouBslK2sTopjMMw81hLM8BRDkisRyTWEN8UUr2pfp5xuchPM6OoSHD%2FMxh8Q7Parh8pKdvprNn97U%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b520b65ff4cb9b1-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"project":"test","channel":"test","event":"test-imported-event","notify":false,"parser":"text","timestamp":"2023-01-01T00:00:00.000Z"}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/log'
+            content_type: application/json
+            http_code: 200
+            header_size: 606
+            request_size: 309
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.680266
+            namelookup_time: 0.002484
+            connect_time: 0.207846
+            pretransfer_time: 0.243187
+            size_upload: 118.0
+            size_download: 135.0
+            speed_download: 198.0
+            speed_upload: 173.0
+            download_content_length: 135.0
+            upload_content_length: 118.0
+            starttransfer_time: 0.680231
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61739
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 450981
+            connect_time_us: 207846
+            namelookup_time_us: 2484
+            pretransfer_time_us: 243187
+            redirect_time_us: 0
+            starttransfer_time_us: 680231
+            total_time_us: 680266
+            effective_method: POST
+    index: 0
