@@ -16,6 +16,8 @@ use Psr\Http\Message\StreamFactoryInterface;
 
 class Client
 {
+    public const API_URL = 'https://api.logsnag.com/v1';
+
     use HandlesLog;
     use HandlesInsight;
 
@@ -24,14 +26,13 @@ class Client
     private Insight $insight;
 
     public function __construct(
-        string $url,
         string $apiKey = null,
         ClientInterface $httpClient = null,
         RequestFactoryInterface $requestFactory = null,
         array $clientAgents = [],
         StreamFactoryInterface $streamFactory = null
     ) {
-        $this->http = new LogSnagClient($url, $apiKey, $httpClient, $requestFactory, $clientAgents, $streamFactory);
+        $this->http = new LogSnagClient(self::API_URL, $apiKey, $httpClient, $requestFactory, $clientAgents, $streamFactory);
 
         $this->log = new Log($this->http);
         $this->insight = new Insight($this->http);

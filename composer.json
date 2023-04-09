@@ -13,7 +13,9 @@
     "friendsofphp/php-cs-fixer": "^3.16",
     "guzzlehttp/guzzle": "^7.5",
     "phpstan/phpstan": "^1.10",
-    "phpunit/phpunit": "^9.5"
+    "phpunit/phpunit": "^9.5",
+    "php-vcr/php-vcr": "^1.6",
+    "php-vcr/phpunit-testlistener-vcr": "^3.1"
   },
   "license": "MIT",
   "autoload": {

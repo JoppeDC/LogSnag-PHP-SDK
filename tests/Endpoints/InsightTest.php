@@ -10,6 +10,9 @@ use Tests\TestCase;
 
 class InsightTest extends TestCase
 {
+    /**
+     * @vcr insight_test
+     */
     public function testCreateInsight(): void
     {
         $payload = new InsightPayload(
@@ -25,6 +28,9 @@ class InsightTest extends TestCase
         $this->assertEquals('5', $response['value']);
     }
 
+    /**
+     * @vcr insight_test
+     */
     public function testMutateInsight(): void
     {
         $payload = new InsightPayload(

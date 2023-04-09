@@ -1,0 +1,138 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.logsnag.com/v1/log'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Authorization: 'Bearer testkey'
+            Accept: ''
+        body: '{"notify":true,"parser":"text"}'
+    response:
+        status:
+            code: 400
+            message: 'Bad Request'
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:18:35 GMT'
+            Content-Type: application/json
+            Content-Length: '284'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZoA0WYBAB1nQzfAXKYyAvtgNqLpZ8php%2FUKdDFDS37EfFDr8Civ5Wf76wGO0g9d1Y1tvnSnuvaIamPH3cpGX9uXJ42PbduWYlT%2F7KPr%2BZdWeL4GuH3OVUJX20%2BH5OrfajcsjRyNxAl8PZUIDvIE%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b5201c10c7ab9b4-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"message":"Validation Error","validation":{"body":[{"path":"project","type":"invalid_type","message":"Project name is required"},{"path":"channel","type":"invalid_type","message":"Channel name is required"},{"path":"event","type":"invalid_type","message":"Event name is required"}]}}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/log'
+            content_type: application/json
+            http_code: 400
+            header_size: 621
+            request_size: 196
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.279923
+            namelookup_time: 0.004179
+            connect_time: 0.209366
+            pretransfer_time: 0.244768
+            size_upload: 31.0
+            size_download: 284.0
+            speed_download: 1014.0
+            speed_upload: 110.0
+            download_content_length: 284.0
+            upload_content_length: 31.0
+            starttransfer_time: 0.279804
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61597
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 454090
+            connect_time_us: 209366
+            namelookup_time_us: 4179
+            pretransfer_time_us: 244768
+            redirect_time_us: 0
+            starttransfer_time_us: 279804
+            total_time_us: 279923
+            effective_method: POST
+    index: 0
+-
+    request:
+        method: POST
+        url: 'https://api.logsnag.com/v1/log'
+        headers:
+            Host: api.logsnag.com
+            Expect: ''
+            Accept-Encoding: ''
+            User-Agent: 'LogSnag PHP (v1.0.0)'
+            Content-Type: application/json
+            Accept: ''
+        body: '{"notify":true,"parser":"text"}'
+    response:
+        status:
+            code: 400
+            message: 'Bad Request'
+        headers:
+            Date: 'Sun, 09 Apr 2023 10:25:19 GMT'
+            Content-Type: application/json
+            Content-Length: '166'
+            Connection: keep-alive
+            Access-Control-Allow-Origin: '*'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4vV8fD%2BzICEi1v5v%2F%2FM1DCDKTuxztukGZuXVb%2F3bS3HlZgkimgsqBJDDdAqyQfVJ8GKNuGWkPBbv%2BCUbEFNhKYNpfq%2B0epFxH6Haz7eo8zHD8rf%2FlaBVAouHkMnZ72kDhgThxBtrHmxoPKfNCPU%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server: cloudflare
+            CF-RAY: 7b520ba18e4cd488-BRU
+            alt-svc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'
+        body: '{"message":"Validation Error","validation":{"headers":[{"path":"authorization","type":"invalid_type","message":"Authorization header must be a valid Bearer token"}]}}'
+        curl_info:
+            url: 'https://api.logsnag.com/v1/log'
+            content_type: application/json
+            http_code: 400
+            header_size: 627
+            request_size: 165
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.27186
+            namelookup_time: 0.003642
+            connect_time: 0.203801
+            pretransfer_time: 0.240871
+            size_upload: 31.0
+            size_download: 166.0
+            speed_download: 610.0
+            speed_upload: 114.0
+            download_content_length: 166.0
+            upload_content_length: 31.0
+            starttransfer_time: 0.271837
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: '2606:4700:3032::ac43:b4a1'
+            certinfo: {  }
+            primary_port: 443
+            local_ip: '2a02:1810:a466:5100:2d06:afbf:bf4b:d2ed'
+            local_port: 61743
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 444636
+            connect_time_us: 203801
+            namelookup_time_us: 3642
+            pretransfer_time_us: 240871
+            redirect_time_us: 0
+            starttransfer_time_us: 271837
+            total_time_us: 271860
+            effective_method: POST
+    index: 0
