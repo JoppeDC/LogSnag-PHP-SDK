@@ -7,7 +7,6 @@
     "ext-json": "*",
     "php-http/discovery": "^1.15",
     "psr/http-client-implementation": "*",
-    "psr/http-client": "^1.0",
     "psr/http-factory-implementation": "*"
   },
   "require-dev": {
