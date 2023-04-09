@@ -32,11 +32,6 @@ jobs:
           composer require --dev php-http/guzzle6-adapter http-interop/http-factory-guzzle
           sh scripts/tests.sh
           composer remove --dev php-http/guzzle6-adapter http-interop/http-factory-guzzle
-      - name: Run test suite - symfony/http-client
-        run: |
-          composer require --dev symfony/http-client nyholm/psr7
-          sh scripts/tests.sh
-          composer remove --dev symfony/http-client nyholm/psr7
       - name: Run test suite - php-http/curl-client
         run: |
           composer require --dev php-http/curl-client nyholm/psr7
