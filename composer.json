@@ -7,6 +7,7 @@
     "ext-json": "*",
     "php-http/discovery": "^1.15",
     "psr/http-client-implementation": "*",
+    "psr/http-client": "^1.0",
     "psr/http-factory-implementation": "*"
   },
   "require-dev": {
@@ -15,6 +16,7 @@
     "phpstan/phpstan": "^1.10",
     "phpunit/phpunit": "^9.5",
     "php-vcr/php-vcr": "1.5.5",
+
     "php-vcr/phpunit-testlistener-vcr": "^3.1"
   },
   "license": "MIT",
